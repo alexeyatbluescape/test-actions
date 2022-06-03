@@ -32,5 +32,5 @@ jobs:
         uses: Bluescape/github-tag-action@1.39.1-bugfix
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          WITH_V: false
+          WITH_V: true
           RELEASE_BRANCHES: main
