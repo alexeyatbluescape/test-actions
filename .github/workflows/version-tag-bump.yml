@@ -6,7 +6,7 @@ name: tag-bump
 on:
   # Triggers the workflow on push to the main branch
   push:
-    branches: [ main ]
+    branches: [main]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -29,7 +29,7 @@ jobs:
 
       - name: Module tag bump
         # You may pin to the exact commit or the version.
-        uses: alexeyatbluescape/github-tag-action@bugfix/semver-empty-results
+        uses: Bluescape/github-tag-action@1.39.1-bugfix
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           WITH_V: true
